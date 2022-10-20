@@ -1,5 +1,6 @@
 import React from 'react'
 import { StyleSheet, Text, TextStyle } from 'react-native'
+import Fonts from '../../controller/Fonts'
 
 type Props = {
     children: React.ReactNode
@@ -12,6 +13,7 @@ const TextNormal = ({ children, ...props }: Props) => {
             {...props}
             style={{
                 includeFontPadding: true,
+                fontFamily: Fonts.poppinsMedium,
                 ...props?.style
             }}>
             {children}
